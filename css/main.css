@@ -563,6 +563,13 @@ label {
     img {
     left: 75px;
   }
+
+  /*--- Sobre ---*/
+
+  #ls-avatar-sobre img {
+    position: relative;
+    left: -15px;
+  }
 }
 
 @media screen and (min-width: 576px) {
@@ -703,8 +710,8 @@ label {
 }
 
 .ls-subtitle {
-  font-family: "Abril Fatface", sans-serif;
-  font-weight: normal;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
 }
 
 .ls-title-large {
@@ -838,6 +845,43 @@ label {
 
 .ls-no-padding {
   padding: 0 !important;
+}
+
+.ls-box-img {
+  width: 100%;
+  display: table;
+}
+
+.ls-img-responsive {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.ls-page-list {
+  list-style: none;
+  font-family: "Open Sans", sans-serif;
+}
+
+.ls-page-list > li {
+  font-size: 14px;
+  line-height: 21px;
+  margin-bottom: 15px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.ls-page-list > li:before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  top: 7px;
+  left: 0;
+  background-color: #52aafd;
 }
 /*Classes de comportamento*/
 
