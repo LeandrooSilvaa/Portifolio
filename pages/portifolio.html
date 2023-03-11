@@ -15,8 +15,9 @@
       href="../css/bootstrap-grid.min.css"
       type="text/css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="../css/main.css" type="text/css" />
-    <title>Portifólio - Leandro Silva</title>
+    <title>Leandro Silva - Portifólio</title>
   </head>
   <body>
     <div class="ls-preloader">
@@ -30,88 +31,6 @@
 
     <div class="ls-overlay ls-toggle-modal"></div>
 
-    <div class="ls-modal ls-bg-black" id="ls-modal-orcamento">
-      <div class="ls-modal-header">
-        <h1 class="ls-title ls-text-blue">Solicite um Orçamento</h1>
-        <button class="ls-close-modal ls-toggle-modal">X</button>
-      </div>
-
-      <div class="ls-modal-body">
-        <div class="row">
-          <div class="col-sm-12">
-            <p class="ls-text-light">
-              Por favor informe os dados abaixo e eu entrarei em contato com
-              você o mais breve possível.
-            </p>
-          </div>
-        </div>
-        <div class="row ls-mar-top-15">
-          <div class="col-sm-12">
-            <form action="" class="ls-form">
-              <div class="row ls-mar-bottom-15">
-                <div class="col-sm-12 col-md-6 ls-mar-bottom-15">
-                  <label for="Nome" class="ls-text-light">Nome</label>
-                  <input
-                    type="text"
-                    name="Nome"
-                    id="ls-nome"
-                    class="ls-field"
-                  />
-                </div>
-                <div class="col-sm-12 col-md-6 ls-mar-bottom-15">
-                  <label for="Email" class="ls-text-light">E-mail</label>
-                  <input
-                    type="email"
-                    name="Email"
-                    id="ls-email"
-                    class="ls-field"
-                  />
-                </div>
-                <div class="col-sm-12 col-md-6 ls-mar-bottom-15">
-                  <label for="Telefone" class="ls-text-light">Telefone</label>
-                  <input
-                    type="tel"
-                    name="Telefone"
-                    id="ls-telefone"
-                    class="ls-field"
-                  />
-                </div>
-                <div class="col-sm-12 col-md-6 ls-mar-bottom-15">
-                  <label for="Site" class="ls-text-light">Site</label>
-                  <input
-                    type="text"
-                    name="Site"
-                    id="ls-telefone"
-                    class="ls-field"
-                  />
-                </div>
-                <div class="col-sm-12 col-md-12 ls-mar-top-15">
-                  <label for="Mensagem" class="ls-text-light"
-                    >Descreva abaixo o projeto no qual você precisa de
-                    orçamento:</label
-                  >
-                  <textarea
-                    name="Mensagem"
-                    id="ls-mensagem"
-                    rows="4"
-                    class="ls-textarea ls-mar-bottom-15"
-                  ></textarea>
-                </div>
-              </div>
-
-              <div class="row justify-content-end ls-mar-top-15">
-                <div class="col-sm-12 col-md-6">
-                  <button class="ls-btn ls-btn-large ls-btn-blue ls-btn-block">
-                    Enviar
-                  </button>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <header class="ls-topbar">
       <div class="ls-logo">
         <img src="../images/logo.svg" alt="Logo Leandro Silva Designer" />
@@ -119,7 +38,7 @@
       <nav class="ls-menu">
         <a href="../index.html">Home</a>
         <a href="#">Portifolio</a>
-        <a href="#">Sobre</a>
+        <a href="sobre.html">Sobre</a>
       </nav>
     </header>
     <div class="ls-contact-info ls-bg-black ls-text-light">
@@ -148,10 +67,14 @@
         <div class="row">
           <div class="col-sm-10 offset-sm-1">
             <ul class="ls-portifolio-list">
-              <li class="ls-slider-item ls-slide-active" data-slide="1">
+              <li class="ls-portifolio-item ls-slide-active" data-slide="1">
                 <div class="row">
                   <div class="col-sm-5">
-                    <div class="ls-portifolio-item-info ls-text-light">
+                    <div
+                      class="ls-portifolio-item-info ls-text-light"
+                      data-aos="fade-right"
+                      data-aos-delay="200"
+                    >
                       <h1 class="ls-title ls-title-large ls-mar-bottom-15">
                         Projeto Website
                       </h1>
@@ -165,8 +88,18 @@
                   </div>
                   <div class="col-sm-6">
                     <div class="ls-portifolio-item-thumb">
-                      <div class="ls-portifolio-item-box"></div>
-                      <img src="../images/thumb-1.jpg" title="Startup" />
+                      <div
+                        class="ls-portifolio-item-box"
+                        data-aos="zoom-in"
+                        data-aos-delay="300"
+                      ></div>
+                      <img
+                        src="../images/thumb-1.jpg"
+                        title="Startup"
+                        data-aos="flip-left"
+                        data-aos-offset="300"
+                        data-aos-delay="300"
+                      />
                       <button class="ls-btn ls-btn-medium ls-btn-dark">
                         Visitar Site
                         <ion-icon name="arrow-redo-sharp"></ion-icon>
@@ -175,10 +108,14 @@
                   </div>
                 </div>
               </li>
-              <li class="ls-slider-item" data-slide="2">
+              <li class="ls-portifolio-item" data-slide="2">
                 <div class="row">
                   <div class="col-sm-5">
-                    <div class="ls-portifolio-item-info ls-text-light">
+                    <div
+                      class="ls-portifolio-item-info ls-text-light"
+                      data-aos="fade-left"
+                      data-aos-delay="200"
+                    >
                       <h1 class="ls-title ls-title-large ls-mar-bottom-15">
                         Projeto Website2
                       </h1>
@@ -192,8 +129,18 @@
                   </div>
                   <div class="col-sm-6">
                     <div class="ls-portifolio-item-thumb">
-                      <div class="ls-portifolio-item-box"></div>
-                      <img src="../images/thumb-5.jpg" title="Startup" />
+                      <div
+                        class="ls-portifolio-item-box"
+                        data-aos="zoom-in"
+                        data-aos-delay="300"
+                      ></div>
+                      <img
+                        src="../images/thumb-5.jpg"
+                        title="Startup"
+                        data-aos="flip-left"
+                        data-aos-offset="300"
+                        data-aos-delay="300"
+                      />
                       <button class="ls-btn ls-btn-medium ls-btn-dark">
                         Visitar Site
                         <ion-icon name="arrow-redo-sharp"></ion-icon>
@@ -202,10 +149,14 @@
                   </div>
                 </div>
               </li>
-              <li class="ls-slider-item" data-slide="3">
+              <li class="ls-portifolio-item" data-slide="3">
                 <div class="row">
                   <div class="col-sm-5">
-                    <div class="ls-portifolio-item-info ls-text-light">
+                    <div
+                      class="ls-portifolio-item-info ls-text-light"
+                      data-aos="fade-right"
+                      data-aos-delay="200"
+                    >
                       <h1 class="ls-title ls-title-large ls-mar-bottom-15">
                         Projeto Website-3
                       </h1>
@@ -219,8 +170,18 @@
                   </div>
                   <div class="col-sm-6">
                     <div class="ls-portifolio-item-thumb">
-                      <div class="ls-portifolio-item-box"></div>
-                      <img src="../images/thumb-3.jpg" title="Startup" />
+                      <div
+                        class="ls-portifolio-item-box"
+                        data-aos="zoom-in"
+                        data-aos-delay="300"
+                      ></div>
+                      <img
+                        src="../images/thumb-3.jpg"
+                        title="Startup"
+                        data-aos="flip-left"
+                        data-aos-offset="300"
+                        data-aos-delay="300"
+                      />
                       <button class="ls-btn ls-btn-medium ls-btn-dark">
                         Visitar Site
                         <ion-icon name="arrow-redo-sharp"></ion-icon>
@@ -229,10 +190,14 @@
                   </div>
                 </div>
               </li>
-              <li class="ls-slider-item" data-slide="4">
+              <li class="ls-portifolio-item" data-slide="4">
                 <div class="row">
                   <div class="col-sm-5">
-                    <div class="ls-portifolio-item-info ls-text-light">
+                    <div
+                      class="ls-portifolio-item-info ls-text-light"
+                      data-aos="fade-left"
+                      data-aos-delay="200"
+                    >
                       <h1 class="ls-title ls-title-large ls-mar-bottom-15">
                         Projeto Website-4
                       </h1>
@@ -246,8 +211,18 @@
                   </div>
                   <div class="col-sm-6">
                     <div class="ls-portifolio-item-thumb">
-                      <div class="ls-portifolio-item-box"></div>
-                      <img src="../images/thumb-4.jpg" title="Startup" />
+                      <div
+                        class="ls-portifolio-item-box"
+                        data-aos="zoom-in"
+                        data-aos-delay="300"
+                      ></div>
+                      <img
+                        src="../images/thumb-4.jpg"
+                        title="Startup"
+                        data-aos="flip-left"
+                        data-aos-offset="300"
+                        data-aos-delay="300"
+                      />
                       <button class="ls-btn ls-btn-medium ls-btn-dark">
                         Visitar Site
                         <ion-icon name="arrow-redo-sharp"></ion-icon>
@@ -267,9 +242,11 @@
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
     ></script>
     <script src="https://unpkg .com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/shortcuts/inview.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
-    <script src="../js/anime.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="../js/main.js"></script>
+
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
