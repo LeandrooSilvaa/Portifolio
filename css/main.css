@@ -17,6 +17,12 @@ label {
   }
 }
 
+@keyframes fadeOutTopBar {
+  to {
+    background-color: #000000;
+  }
+}
+
 @keyframes fadeFromLeft {
   to {
     left: 0;
@@ -203,8 +209,24 @@ label {
     background-repeat: no-repeat;
     position: fixed;
     bottom: 45px;
-    right: 45px;
+    right: 3%;
     border-radius: 50%;
+    z-index: 200;
+    transition: all 0.2s ease-out;
+    border: none;
+    cursor: pointer;
+  }
+
+  .ls-btn-whats {
+    width: 45px;
+    height: 45px;
+    display: block;
+    background-color: #1ddd67;
+    position: fixed;
+    bottom: 45px;
+    right: 7%;
+    border-radius: 50%;
+    padding-left: 1px;
     z-index: 200;
     transition: all 0.2s ease-out;
     border: none;
@@ -923,6 +945,10 @@ label {
 
 .ls-fade-out {
   animation: fadeOut 2s forwards ease-out;
+}
+
+.ls-fade-out-bar {
+  animation: fadeOutTopBar 2s forwards ease-out;
 }
 
 .ls-fade-from-left {

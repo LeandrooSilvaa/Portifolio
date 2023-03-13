@@ -37,10 +37,18 @@ for (var i = 0; i < toggleModal.length; i++) {
 /*Animando elementos com scroll */
 
 var myScrollDown = document.querySelector(".ls-scroll-down");
+var myTopBar = document.querySelector(".ls-topbar");
+var waypoint = new Waypoint({
+  element: document.querySelector(".ls-btn-contact"),
+  handler: function () {
+    myTopBar.classList.toggle("ls-fade-out-bar");
+  },
+  offset: "85%",
+});
 var waypoint = new Waypoint({
   element: myScrollDown,
   handler: function () {
     myScrollDown.classList.toggle("ls-fade-out");
   },
-  offset: "80%",
+  offset: "85%",
 });
