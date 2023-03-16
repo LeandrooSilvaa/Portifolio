@@ -642,6 +642,10 @@ label {
     z-index: 10;
   }
 
+  .ls-hero-inner-content p {
+    margin-bottom: 15px;
+  }
+
   .ls-hero-inner-content:before {
     content: "";
     width: 100%;
@@ -661,6 +665,16 @@ label {
     height: 100%;
     display: table;
     border-right: 1px solid #2c71b1;
+  }
+
+  .ls-post p {
+    margin-bottom: 30px;
+  }
+
+  .ls-post-section {
+    width: 100%;
+    display: table;
+    padding: 45px 0;
   }
 }
 
@@ -806,6 +820,10 @@ label {
   font-weight: 800;
 }
 
+.ls-title-medium {
+  font-size: 48px;
+}
+
 .ls-title-large {
   font-size: 64px;
 }
@@ -828,6 +846,10 @@ label {
 
 .ls-text-black {
   color: #000000;
+}
+
+.ls-text-center {
+  text-align: center;
 }
 
 .ls-bg-blue {
