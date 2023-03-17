@@ -667,6 +667,11 @@ label {
     border-right: 1px solid #2c71b1;
   }
 
+  .ls-post {
+    width: 100%;
+    display: table;
+  }
+
   .ls-post p {
     margin-bottom: 30px;
   }
@@ -675,6 +680,18 @@ label {
     width: 100%;
     display: table;
     padding: 45px 0;
+  }
+
+  .ls-pre-gallery {
+    padding-bottom: 350px;
+  }
+
+  .ls-post-gallery {
+    display: block;
+  }
+  .ls-post-gallery .container {
+    position: relative;
+    top: -270px;
   }
 }
 

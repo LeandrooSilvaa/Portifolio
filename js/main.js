@@ -34,6 +34,11 @@ for (var i = 0; i < toggleModal.length; i++) {
   });
 }
 
+var postGallery = document.querySelector(".ls-post-gallery");
+var postGalleryHeight = postGallery.clientHeight;
+
+postGallery.style.height = postGalleryHeight - 270 + "px";
+
 /*Animando elementos com scroll */
 
 var myScrollDown = document.querySelector(".ls-scroll-down");
