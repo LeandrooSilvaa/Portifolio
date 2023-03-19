@@ -693,6 +693,71 @@ label {
     position: relative;
     top: -270px;
   }
+
+  .ls-gallery-frame-container {
+    width: 20%;
+    display: none;
+    position: fixed;
+    top: 50px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: 1100;
+  }
+
+  .ls-gallery-frame-inner {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: relative;
+  }
+
+  .ls-gallery-frame-container .ls-items-next-prev {
+    width: 150px;
+    margin: 50px auto 0 auto;
+  }
+
+  .ls-close-gallery {
+    width: 45px;
+    height: 45px;
+    display: block;
+    position: absolute;
+    top: -15px;
+    right: -45px;
+    background-color: #000000;
+    border-radius: 50%;
+    border: none;
+    z-index: 1200;
+    cursor: pointer;
+  }
+
+  .ls-close-gallery ion-icon {
+    width: 25px;
+    height: 25px;
+    color: #52aafd;
+    line-height: 45px;
+  }
+
+  .ls-gallery-frame {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1300;
+  }
+
+  .ls-gallery-frame-image {
+    width: 87%;
+    max-width: 87%;
+    margin: 0 auto;
+    display: block;
+    z-index: 1200;
+    border-radius: 30px;
+    position: relative;
+    top: 18px;
+  }
 }
 
 @media screen and (min-width: 576px) {
