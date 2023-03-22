@@ -4,7 +4,7 @@
 
 var sliderContainer = document.querySelector(".ls-slider-container");
 var sliderList = document.querySelector(".ls-slider-list");
-var sliderItem = document.querySelectorAll(".ls-slider-item");
+var sliderItem = document.querySelectorAll(".ls-portifolio-item");
 const sliderTotalItems = sliderItem.length;
 var sliderListWidth = null;
 var prevItem = document.querySelector(".ls-item-prev");
