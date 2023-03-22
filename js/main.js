@@ -16,7 +16,8 @@ window.addEventListener("load", function () {
 btnContact.addEventListener("click", function () {
   var boxContact = document.querySelector(".ls-contact-info");
 
-  boxContact.classList.toggle("ls-is-open");
+  boxContact.classList.toggle("ls-is-open-contact");
+  boxContact.classList.add("contactBox");
 
   this.classList.toggle("ls-change-icon");
 });
@@ -34,23 +35,18 @@ for (var i = 0; i < toggleModal.length; i++) {
   });
 }
 
-var postGallery = document.querySelector(".ls-post-gallery");
-var postGalleryHeight = postGallery.clientHeight;
-
-postGallery.style.height = postGalleryHeight - 270 + "px";
-
 /*Animando elementos com scroll */
 
 var myScrollDown = document.querySelector(".ls-scroll-down");
 var myTopBar = document.querySelector(".ls-topbar");
-var waypoint = new Waypoint({
+var menuPoint = new Waypoint({
   element: document.querySelector(".ls-btn-contact"),
   handler: function () {
     myTopBar.classList.toggle("ls-fade-out-bar");
   },
   offset: "85%",
 });
-var waypoint = new Waypoint({
+var arrowPoint = new Waypoint({
   element: myScrollDown,
   handler: function () {
     myScrollDown.classList.toggle("ls-fade-out");

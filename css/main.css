@@ -17,9 +17,17 @@ label {
   }
 }
 
+@keyframes contact {
+  to {
+    transform: scaleX(1);
+    transform-origin: right;
+  }
+}
+
 @keyframes fadeOutTopBar {
   to {
     background-color: #000000;
+    opacity: 0.9;
   }
 }
 
@@ -807,7 +815,24 @@ label {
     transform-origin: center left;
   }
 
+  .ls-menu a:after {
+    content: "";
+    width: 100%;
+    height: 4px;
+    background-color: #52aafd;
+    display: block;
+    position: absolute;
+    top: -6px;
+    right: 0;
+    transition: all 0.2s ease-out;
+    transform: scale(0, 1);
+    transform-origin: center right;
+  }
+
   .ls-menu a:hover:before {
+    transform: scale(1, 1);
+  }
+  .ls-menu a:hover:after {
     transform: scale(1, 1);
   }
 }
@@ -1085,6 +1110,11 @@ label {
   display: block;
 }
 
+.ls-is-open-contact {
+  display: block;
+  transform: scale(0);
+}
+
 .ls-slide-top-in {
   animation: slideTopIn 0.6s forwards cubic-bezier(0, 1.11, 0.6, 0.89);
 }
@@ -1100,6 +1130,13 @@ label {
 .ls-fade-out-bar {
   animation: fadeOutTopBar 2s forwards ease-out;
 }
+.engrenagens {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -150px;
+}
 
 .ls-fade-from-left {
   animation: fadeFromLeft 2s 0.7s forwards cubic-bezier(0, 1.01, 0.32, 1);
@@ -1113,22 +1150,42 @@ label {
   animation: scaleUp 0.5s 0.5s forwards cubic-bezier(0, 1.01, 0.32, 1);
 }
 
-.blue {
-  background-color: blue;
+.contactBox {
+  animation: contact 1.5s forwards cubic-bezier(0, 1.01, 0.32, 1);
 }
 
-.green {
-  background-color: green;
+/*Animação tela Sobre*/
+@keyframes gira {
+  to {
+    transform: rotate(360deg);
+  }
 }
 
-.purple {
-  background-color: purple;
+.horario {
+  animation: gira 8s linear infinite;
+}
+.loader {
+  width: 400px;
+  height: 400px;
+  background: url(../images/perfil.svg) no-repeat;
+  background-size: contain;
 }
 
-.yellow {
-  background-color: yellow;
+.loading {
+  border: 16px solid #2c2c2c; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  border-bottom: 16px solid #3498db;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
 }
 
-.red {
-  background-color: red;
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
