@@ -1,6 +1,9 @@
 //Declarando Variáveis
 var btnContact = document.querySelector(".ls-btn-contact");
 var toggleModal = document.querySelectorAll(".ls-toggle-modal");
+var toggleMenu = document.querySelectorAll(".ls-toggle-menu");
+var menuMobile = document.querySelector(".ls-menu-mob");
+var btnMenuMobIcon = document.querySelector(".ls-btn-menu-mob ion-icon")
 
 //Page Preloader
 window.addEventListener("load", function () {
@@ -22,13 +25,32 @@ btnContact.addEventListener("click", function () {
   this.classList.toggle("ls-change-icon");
 });
 
+/* Abrindo e fechando  menu mobile */
+
+for (var m = 0; m < toggleMenu.length; m++) {
+  toggleMenu[m].addEventListener("click", function () {
+    var overlayMenu = document.querySelector(".ls-menu-overlay");
+    overlayMenu.classList.toggle("ls-is-open");
+    menuMobile.classList.toggle("ls-menu-is-close");
+    menuMobile.classList.toggle("ls-menu-is-open");
+    
+    var icons = btnMenuMobIcon.getAttribute("name");
+
+    if(icons === "menu"){
+      btnMenuMobIcon.setAttribute("name","close")
+    }else{
+      btnMenuMobIcon.setAttribute("name","menu")
+    }
+
+  });
+}
 /* Abrindo e fechando  modal de orçamento */
 
 for (var i = 0; i < toggleModal.length; i++) {
   toggleModal[i].addEventListener("click", function () {
-    var overlay = document.querySelector(".ls-overlay");
+    
     var modalOrcamento = document.querySelector("#ls-modal-orcamento");
-
+    var overlay = document.querySelector(".ls-overlay");
     overlay.classList.toggle("ls-is-open");
     modalOrcamento.classList.toggle("ls-is-open");
     modalOrcamento.classList.toggle("ls-slide-top-in");
